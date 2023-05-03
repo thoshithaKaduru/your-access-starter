@@ -1,0 +1,131 @@
+/* Here you can define your own styling for the accessiblity widget */
+.accessible-widget-main {
+    /* border: 1px solid black; */
+    width: 30rem;
+    background-color: #eee;
+    padding: 0.5rem;
+}
+
+/* ==================== Accessiblity Header Styling ==================== */
+/* <span className="accessiblity-header-text">Accessiblity Presets</span>
+                <div className="accessiblity-header-dropdown-container"> */
+.accessiblity-header {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.accessiblity-header-text {
+    margin-right: 1rem;
+}
+
+.accessiblity-header-dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessiblity-header-dropdown-container > img {
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+/* accessiblity preset li item styling */
+.accessiblity-preset-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accessiblity-widget-presets-li-item {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+}
+
+.accessiblity-widget-presets-li-item-img-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.accessiblity-widget-presets-li-item-text {
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+.accessiblity-widget-presets-li-item-img-container > img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* accessiblity widget body styling */
+
+.accessiblity-widget-body {
+    padding-bottom: 2rem;
+}
+
+.accessibility-widget-divider {
+    width: 3rem;
+    margin: 0.5rem 0;
+}
+
+/* accessiblity widget item styling */
+
+.accessiblity-widget-item-container {
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: white;
+}
+
+.accessibility-widget-item-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20%;
+}
+
+.accessibility-widget-item-img-container > img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.accessiblity-widget-item-content-container {
+    flex: 80%;
+    padding: 0.25rem 0.1rem 0.25rem;
+}
+
+/* accessiblity item action styling */
+.accessibility-item-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.accessiblity-item-action-button-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.accessiblity-item-action-button {
+    font-weight: 500;
+}
+
+.accessiblity-item-action-button.active {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.accessiblity-item-action-button.active:hover {
+    text-decoration: underline;
+}
+
+.accessiblity-item-action-button.active:active {
+    color: black;
+}

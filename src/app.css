@@ -1,0 +1,590 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --tertiary-color: #f6f6f6;
+    --accent-color: #a92216;
+    --font-one: "#ffffff";
+    --font-two: "#000000";
+    --font-three: "#141414";
+    --font-four: "#545658";
+}
+
+.first-nav {
+    background: var(--primary-color);
+    height: 6.5rem;
+}
+
+.second-nav {
+    background: var(--accent-color);
+    height: 6rem;
+}
+
+.third-nav {
+    background: var(--accent-color);
+    height: 4.1rem;
+}
+
+.fourth-nav {
+    height: 4rem;
+}
+
+.main {
+    /* height: 60rem; */
+}
+
+.footer {
+    background: var(--secondary-color);
+    height: 72rem;
+}
+
+/* main content pad and middle classes. used in _AccessibleNav and _AccessibleMain */
+.pad {
+    width: 27rem;
+    height: 100%;
+}
+
+.middle {
+    width: 100%;
+    height: 100%;
+}
+
+.main .left,
+.main .right {
+    width: 100%;
+}
+
+/* ============== Header 1 Component Styling ================== */
+.first-nav > .middle {
+    /* background-color: blue; */
+    display: flex;
+}
+
+.bbc-logo {
+    height: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.bbc-logo img {
+    /* height: 50%; */
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    margin-left: 2.2rem;
+    font-weight: 700;
+    width: 17rem;
+    position: relative;
+}
+
+.sign-in::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s;
+}
+
+.sign-in:hover::before {
+    width: 100%;
+}
+
+.sign-in span {
+    margin-left: 1rem;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 1.6rem;
+}
+
+.notification::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.notification:hover::before {
+    width: 100%;
+}
+
+.center-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    /*  */
+}
+
+.home-text {
+    font-weight: 700;
+}
+.home {
+    position: relative;
+    margin-right: 3.5rem;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.home:hover::before {
+    width: 100%;
+}
+
+.news {
+    width: 6rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.news::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.news:hover::before {
+    width: 100%;
+}
+
+.news-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.sport {
+    width: 6rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.sport::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 238, 0, 0.823);
+    transition: width 0.3s;
+}
+
+.sport:hover::before {
+    width: 100%;
+}
+
+.sport-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.weather {
+    width: 8rem;
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.weather::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s;
+}
+
+.weather:hover::before {
+    width: 100%;
+}
+
+.weather-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.iplayer {
+    width: 7rem;
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.iplayer::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.iplayer:hover::before {
+    width: 100%;
+}
+
+.iplayer-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.sounds {
+    width: 7rem;
+    margin-right: 2.5rem;
+    position: relative;
+}
+
+.sounds::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    transition: width 0.3s;
+}
+
+.sounds:hover::before {
+    width: 100%;
+}
+
+.sounds-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.bitesize {
+    width: 8rem;
+    margin-right: 2.75rem;
+    position: relative;
+}
+
+.bitesize::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: purple;
+    transition: width 0.3s;
+}
+
+.bitesize:hover::before {
+    width: 100%;
+}
+
+.bitesize-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+
+.three-dots {
+    width: 3.5rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.three-dots::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.three-dots:hover::before {
+    width: 100%;
+}
+
+.search-box-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: var(--tertiary-color);
+    padding: 0 1rem;
+    width: 20rem;
+}
+
+.search-box-text {
+    font-weight: 700;
+    margin-left: 0.4rem;
+}
+/* ============== Header 2 Component Styling ================== */
+.second-nav > .middle {
+    display: flex;
+    align-items: center;
+}
+
+.second-nav .middle,
+.second-nav .pad {
+    border-bottom: 1.5px solid #fcc8c892;
+}
+/* ============== Header 3 Component Styling ================== */
+.third-nav .middle {
+    display: flex;
+    align-items: center;
+}
+
+.third-nav .left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.third-nav .right {
+    height: 100%;
+    width: 9rem;
+    border-left: 1.5px solid #fcc8c892;
+}
+
+.nav-items {
+    position: relative;
+    padding: 0 0.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+..nav-items::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.1s;
+}
+
+.nav-items-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 125%;
+    height: 3px;
+}
+
+.nav-items::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.1s;
+}
+
+.nav-items-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 125%;
+    height: 3px;
+}
+
+.third-nav .nav-items::before {
+    background-color: white;
+}
+
+.third-nav .nav-items-active::after {
+    background-color: white;
+}
+
+.fourth-nav .nav-items::before {
+    background-color: red;
+}
+
+.fourth-nav .nav-items-active::after {
+    background-color: red;
+}
+
+.nav-items:hover::before {
+    height: 3px;
+}
+
+.nav-items-text {
+    font-weight: 400;
+}
+
+/* More Button Styling */
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    transition: height 0.1s;
+}
+
+.menu:hover::before {
+    height: 3px;
+}
+
+.menu-text {
+    font-weight: 400;
+    margin-left: 1rem;
+}
+/* ============== Header 4 Component Styling ================== */
+.fourth-nav .middle {
+    display: flex;
+    align-items: center;
+}
+
+/* ============== Main Component Styling ================== */
+.main .left {
+    padding-right: 6rem;
+}
+
+.main-content {
+    margin-top: 5rem;
+}
+
+.primary-title {
+    display: block;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.share-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    background-color: rgb(224, 27, 27);
+    width: 4rem;
+    height: 4rem;
+}
+
+.article-image-container {
+    padding-top: 5rem;
+}
+
+.author-name {
+    display: block;
+    margin-top: 2rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.author-title {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.author-divider {
+    width: 4rem;
+    margin: 1.8rem 0 2.2rem 0;
+}
+
+/* main content text */
+.main-content-text-container {
+    width: 80%;
+    background-color: white;
+}
+
+.main-content-text-container.second {
+    margin-top: 2rem;
+}
+
+.main-content-text-container.third {
+    margin-top: 4rem;
+}
+
+.main-content-text {
+    font-weight: 400;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.main-content-text.bold {
+    font-weight: 700;
+}
+
+/* main content right styling */
+.main .right {
+    width: 60rem;
+    position: relative;
+}
+
+.main .floater {
+    position: relative;
+}
+
+/* Accessible Toggle Styling */
+.accessible-toggle-text {
+    width: 30rem;
+}
+
+.accessible-toggle-text {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.accessible-toggle-text.active {
+    background: var(--accent-color);
+    text-decoration-color: var(--primary-color);
+}
+
+.accessible-logo-container {
+    margin-left: 5rem;
+}
+
+.fixed-panel {
+    z-index: 999;
+}
